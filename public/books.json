@@ -1,0 +1,89 @@
+
+    [
+      {
+        "id": 1,
+        "image": "https://i.ibb.co/V2ct5qN/pngwing-1.jpg",
+        "bookName": "The Enigmatic Island",
+        "author": "Elena Mystique",
+        "category": "Mystery",
+        "review": "A thrilling adventure full of twists and turns!",
+        "tags": ["Adventure", "Thriller", "Suspense"],
+        "totalPages": 320,
+        "publisher": "Mystic Press",
+        "yearOfPublishing": 2023,
+        "rating": 4.5,
+        "buttons": ["Read", "Wishlist"]
+      },
+      {
+        "id": 2,
+        "image": "https://i.ibb.co/KwDS8Vy/kindpng-7318921.jpg",
+        "bookName": "Echoes of Eternity",
+        "author": "Samuel Everlasting",
+        "category": "Fantasy",
+        "review": "Imaginative and captivating!",
+        "tags": ["Magic", "Quest", "Dragons"],
+        "totalPages": 420,
+        "publisher": "Eternal Books",
+        "yearOfPublishing": 2022,
+        "rating": 4.8,
+        "buttons": ["Read", "Wishlist"]
+      },
+      {
+        "id": 3,
+        "image": "https://i.ibb.co/5xWBJRC/kindpng-1064993.png",
+        "bookName": "Silent Shadows",
+        "author": "Isabella Nightshade",
+        "category": "Thriller",
+        "review": "Keeps you on the edge of your seat!",
+        "tags": ["Suspense", "Mystery", "Intrigue"],
+        "totalPages": 280,
+        "publisher": "Shadow Publications",
+        "yearOfPublishing": 2024,
+        "rating": 4.6,
+        "buttons": ["Read", "Wishlist"]
+      },
+      {
+        "id": 4,
+        "image": "https://i.ibb.co/vZz4Hg6/kindpng-4022054-1.jpg",
+        "bookName": "Whispers in the Dark",
+        "author": "Lucas Midnight",
+        "category": "Horror",
+        "review": "Spine-chilling and utterly gripping!",
+        "tags": ["Supernatural", "Fear", "Darkness"],
+        "totalPages": 350,
+        "publisher": "Midnight House",
+        "yearOfPublishing": 2021,
+        "rating": 4.4,
+        "buttons": ["Read", "Wishlist"]
+      },
+      {
+        "id": 5,
+        "image": "https://i.ibb.co/Bt0Gfts/kindpng-81724-1.png",
+        "bookName": "Stars Beyond Time",
+        "author": "Aurora Stardust",
+        "category": "Science Fiction",
+        "review": "A journey through the cosmos like no other!",
+        "tags": ["Space", "Adventure", "Aliens"],
+        "totalPages": 380,
+        "publisher": "Stellar Publishing",
+        "yearOfPublishing": 2023,
+        "rating": 4.7,
+        "buttons": ["Read", "Wishlist"]
+      },
+      {
+        "id": 6,
+        "image": "https://i.ibb.co/5rNTFFZ/kindpng-4945926-1.png",
+        "bookName": "Echoes of Autumn",
+        "author": "Fiona Maplewood",
+        "category": "Romance",
+        "review": "Heartwarming and beautifully written!",
+        "tags": ["Love", "Relationships", "Autumn"],
+        "totalPages": 300,
+        "publisher": "Maple Leaf Books",
+        "yearOfPublishing": 2022,
+        "rating": 4.9,
+        "buttons": ["Read", "Wishlist"]
+      }
+    ]
+
+  
