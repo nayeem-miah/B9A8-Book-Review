@@ -5,7 +5,7 @@ import Books from "../Components/Books";
 
 const Home = () => {
     const books = useLoaderData();
-    console.log(books);
+    // console.log(books);
     return (
         <div>
             <Banner></Banner>

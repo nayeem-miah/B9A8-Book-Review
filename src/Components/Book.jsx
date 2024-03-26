@@ -1,10 +1,10 @@
 import { FcRating } from "react-icons/fc";
 import { Link } from "react-router-dom";
 const Book = ({ book }) => {
-  const { author, rating, bookName,tags, image, buttons, category } = book;
+  const { id,author, rating, bookName,tags, image, category } = book;
   return (
     <div>
-      <Link to={'/'}
+      <Link to={`/book/${id}`}
        className="card  bg-base-100  shadow-xl ">
         <figure className="bg-base-300 p-8">
           <img className="w-52 h-52" src={image} />
