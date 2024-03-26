@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Book from "./Book";
 
 
@@ -10,9 +11,9 @@ const Books = ({ books }) => {
         
         
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {books.map((book) => (
-          <Book key={book.id} book={book}></Book>
-        ))}
+        {
+        books.map(book => (<Book key={book.id} book={book}></Book>))
+        }
       </div>
     </div>
   );

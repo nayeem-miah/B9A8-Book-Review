@@ -1,4 +1,5 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { saveBooks } from "./LocalStorage/LocalStorage";
 
 const BookDetails = () => {
   const bookDetails = useLoaderData();
@@ -18,11 +19,15 @@ const BookDetails = () => {
     
     category,
   } = book;
-  console.log(book);
+//   console.log(book);
+  const handleClickButton=(book) =>{
+    console.log(book);
+    saveBooks(book);
+  }
   return (
     <div className="hero min-h-[[calc(100vh-100px)]] mt-10 border justify-center ">
       <div className="lg:flex   gap-20">
-        <div className="w-2/3 py-8 px-12  bg-gray-100 ">
+        <div className="w-2/3 py-8 px-12  bg-base-200 ">
           <img src={image} className=" rounded-lg mx-auto shadow-2xl" />
         </div>
         <div className="w-full">
@@ -56,7 +61,7 @@ const BookDetails = () => {
 
           <div className="flex  gap-8">
             <Link>
-              <button className="btn border-green-400 my-3">Read</button>
+              <button onClick={()=>handleClickButton(book)} className="btn border-green-400 my-3">Read</button>
             </Link>
             <Link>
               <button className="btn btn-secondary my-3">Wishlist</button>

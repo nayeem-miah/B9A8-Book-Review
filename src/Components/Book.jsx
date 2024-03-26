@@ -1,6 +1,6 @@
 import { FcRating } from "react-icons/fc";
 import { Link } from "react-router-dom";
-const Book = ({ book }) => {
+const Book = ({book}) => {
   const { id,author, rating, bookName,tags, image, category } = book;
   return (
     <div>
