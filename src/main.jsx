@@ -15,6 +15,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReadBooks from "./Components/ReadBooks";
 import WishlistBooks from "./Components/WishlistBooks";
+import Contact from "./Pages/Contact";
 
 
 const router = createBrowserRouter([
@@ -61,6 +62,12 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <AboutUs></AboutUs>,
+        loader: ()=>fetch('books.json'),
+
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>,
         loader: ()=>fetch('books.json'),
 
       }

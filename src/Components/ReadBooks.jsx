@@ -13,7 +13,7 @@ const ReadBooks = () => {
       }, []);
 
     
-    console.log(books1);
+    // console.log(books1);
     return (
         <div className="">
            {books1.map((book) => (

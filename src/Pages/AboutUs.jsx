@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Book from "../Components/Book";
+
 import ListedShowBook from "../Components/ListedShowBook";
 
 const AboutUs = () => {

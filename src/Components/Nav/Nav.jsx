@@ -79,6 +79,14 @@ const Nav = () => {
           >
             About us
           </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+            isActive ? "text-primary font-bold border-2 border-green-500 p-1 rounded" : "font-bold"
+            }
+          >
+           Contact
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-5">
