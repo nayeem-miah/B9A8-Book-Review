@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
-import Book from "../Components/Book";
-import { getBooks } from "../Components/LocalStorage/LocalStorage";
+import {  useState } from "react";
+
 import { IoMdArrowDropdown } from "react-icons/io";
 import { Link, Outlet } from "react-router-dom";
-import ReadBooks from "../Components/ReadBooks";
 
 const ListedBooks = () => {
   
@@ -91,7 +89,7 @@ const ListedBooks = () => {
         </div>
         
           <Outlet></Outlet>
-          {/* <ReadBooks></ReadBooks> */}
+          
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosContacts } from "react-icons/io";
 import { MdRestorePage } from "react-icons/md";
+import PropTypes from 'prop-types'; 
 const ListedShowBook = ({book}) => {
     const {  author, rating, bookName, tags, image, category, totalPages,publisher,yearOfPublishing } = book;
     return (
@@ -14,7 +15,7 @@ const ListedShowBook = ({book}) => {
             {tags.map((b, index) => (
               <button
                 key={index}
-                className="border rounded-2xl px-4 bg-gray-200 text-green-500 font-bold"
+                className="border rounded-2xl lg:px-4 px-1 bg-gray-200 text-green-500 font-bold"
               >
                 #{b}
                 
@@ -36,5 +37,8 @@ const ListedShowBook = ({book}) => {
 </div>
     );
 };
+ListedShowBook.propTypes={
+  book:PropTypes.object.isRequired,
+}
 
 export default ListedShowBook;

@@ -35,7 +35,7 @@ const BookDetails = () => {
           <img src={image} className=" rounded-lg mx-auto shadow-2xl" />
         </div>
         <div className="w-full">
-          <h1 className="text-5xl font-bold">{bookName}</h1>
+          <h1 className="lg:text-5xl text-2xl font-bold">{bookName}</h1>
           <p className="py-2 border-b-2">
             <span className="font-bold">By:</span>
             {author}
