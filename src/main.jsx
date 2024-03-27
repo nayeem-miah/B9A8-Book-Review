@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=>fetch('books.json'),
+        loader: ()=>fetch('../books.json'),
       },
       
       {
@@ -38,6 +38,7 @@ const router = createBrowserRouter([
           {
             index : true,
             element: <ReadBooks></ReadBooks>,
+            
             
           },
           {
@@ -50,7 +51,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/pages',
-        element: <PagesToRead></PagesToRead>
+        element: <PagesToRead></PagesToRead>,
+       
 
       },
       {

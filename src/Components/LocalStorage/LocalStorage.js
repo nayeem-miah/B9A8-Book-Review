@@ -36,6 +36,11 @@ export const saveBooksWishesList = (book) => {
   if (exist) {
     return toast.error("Already Exist wishesList Listed Books!!");
   }
+  let books = getBooks();
+  const exist2 = books.find((b) => b.id === book.id);
+  if (exist2) {
+    return toast.error("Already Exist in read list !!");
+  }
   books2.push(book);
   localStorage.setItem("books2", JSON.stringify(books2));
   toast.success(" WishList  Listed Books Successfully ");
