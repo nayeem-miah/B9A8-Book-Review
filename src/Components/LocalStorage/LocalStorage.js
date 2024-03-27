@@ -8,13 +8,24 @@ export const getBooks = () => {
   return books;
 };
 
+
 export const saveBooks = (book) => {
   let books = getBooks();
   const exist = books.find((b) => b.id === book.id);
   if (exist) {
-    return toast.error("Already Exist Listed Books!!");
+    return toast.error("Already Exist Listed read Books!!");
   }
   books.push(book);
   localStorage.setItem("books", JSON.stringify(books));
-  toast.success("Listed Books Successfully ");
+  toast.success("Listed read Books Successfully ");
+};
+export const saveBooksWishesList = (book) => {
+  let books = getBooks();
+  const exist = books.find((b) => b.id === book.id);
+  if (exist) {
+    return toast.error("Already Exist wishesList Listed Books!!");
+  }
+  books.push(book);
+  localStorage.setItem("books", JSON.stringify(books));
+  toast.success(" WishList  Listed Books Successfully ");
 };

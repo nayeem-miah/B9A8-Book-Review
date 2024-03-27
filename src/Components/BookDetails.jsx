@@ -1,5 +1,5 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { saveBooks } from "./LocalStorage/LocalStorage";
+import { saveBooks, saveBooksWishesList } from "./LocalStorage/LocalStorage";
 
 const BookDetails = () => {
   const bookDetails = useLoaderData();
@@ -21,8 +21,12 @@ const BookDetails = () => {
   } = book;
 //   console.log(book);
   const handleClickButton=(book) =>{
-    console.log(book);
+    // console.log(book);
     saveBooks(book);
+  }
+  const handleClickWishBook=(book) =>{
+    // console.log(book);
+    saveBooksWishesList(book);
   }
   return (
     <div className="hero min-h-[[calc(100vh-100px)]] mt-10 border justify-center ">
@@ -64,7 +68,7 @@ const BookDetails = () => {
               <button onClick={()=>handleClickButton(book)} className="btn border-green-400 my-3">Read</button>
             </Link>
             <Link>
-              <button className="btn btn-secondary my-3">Wishlist</button>
+              <button onClick={()=>handleClickWishBook(book)} className="btn btn-secondary my-3">Wishlist</button>
             </Link>
           </div>
         </div>

@@ -13,6 +13,8 @@ import ErrorPage from "./Pages/ErrorPage";
 import BookDetails from "./Components/BookDetails";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReadBooks from "./Components/ReadBooks";
+import WishlistBooks from "./Components/WishlistBooks";
 
 
 const router = createBrowserRouter([
@@ -30,7 +32,20 @@ const router = createBrowserRouter([
       
       {
         path: '/listed',
-        element: <ListedBooks></ListedBooks>
+        element: <ListedBooks></ListedBooks>,
+        children:[
+          {
+            index : true,
+            element: <ReadBooks></ReadBooks>,
+            loader: ()=>fetch('/books.json'),
+          },
+          {
+            path: 'wish',
+            element: <WishlistBooks></WishlistBooks>,
+            // loader: ()=>fetch('books.json'),
+
+          },
+        ],
       },
       {
         path: '/pages',
@@ -40,8 +55,8 @@ const router = createBrowserRouter([
       {
         path: '/book/:id',
         element: <BookDetails></BookDetails>,
-        loader: ({params})=>fetch('../books.json')
-
+        loader: ()=>fetch('../books.json'),
+ 
       },
       {
         path: '/about',
